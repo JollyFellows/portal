@@ -8,6 +8,8 @@ mkdir ansible_work
 
 cd ansible_work/
 
+sudo yum -y install wget
+
 wget -e"https_proxy=172.22.0.1:58080/" https://raw.githubusercontent.com/JollyFellows/portal/master/requirements/hello.yml
 
 export http_proxy=http://172.22.0.1:58080/
@@ -15,6 +17,10 @@ export http_proxy=http://172.22.0.1:58080/
 export https_proxy=http://172.22.0.1:58080/
 
 export no_proxy=127.0.0.1,localhost,172.22.0.200,172.22.0.210,172.22.0.220
+
+sudo yum -y install git
+
+git config --global https.https://github.com/.proxy http://172.22.0.1:58080/
 
 ansible-galaxy install -r hello.yml -p roles
 
