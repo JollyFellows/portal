@@ -1,5 +1,5 @@
 # Playbook Collection
 
-[ロールリスト](./requirements/hello.yml)
-[README.md](./requirements/hello.yml)
+[RoleList](./requirements/hello.yml)
+[README.md](../../../../DaithK/hello/blob/master/README.md)
 
